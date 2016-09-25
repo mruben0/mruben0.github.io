@@ -30,6 +30,7 @@ $http.get('posts/posts'+$scope.ind+'.json')
   $scope.clock = new Date();
   var secondd = function(){
     $scope.clock = new Date();
+    $scope.minSec= 60 - $scope.clock;
   };
   setInterval (function(){
   $scope.$apply(secondd);
@@ -78,8 +79,3 @@ $scope.shtoyik = "more"}
 else ($scope.shtoyik = "less")
 }
 });
-//loop
-
-
-
-// Հարցնել Արթուրին

@@ -87,7 +87,7 @@ window.onclick = function(event) {
 <a ng-click="isReplyFormOpen = !isReplyFormOpen" class="w3-btn w3-white">Reply</a>
 <div ng-show="isReplyFormOpen" class="w3-panel w3-red">
   <h3>Danger!</h3>
-  <p>{{clock | date:'hh'}} : {{clock | date:'mm'}} : {{clock | date:'ss'}}</p>
+  <p>{{clock | date:'hh'}} : {{clock | date:'mm'}} : {{minSec | date:'ss'}}</p>
 </div>
 
 <!--normal size button-->
