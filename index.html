@@ -6,7 +6,7 @@
 <link rel="icon" href="img/ic.jpg" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="css/Style.css">
 <link rel="stylesheet" type="text/css" href="css/w3.css">
-<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
@@ -78,10 +78,10 @@ window.onclick = function(event) {
 }
 </script>
 <!-- modal to do list -->
-
-<!--xs button-->
-          <button class="visible-sm-block commentBtn w3-btn w3-white w3-border" ng-click="ccc($index)">Click Me!</button>
-          <button class="visible-sm-block commentBtn w3-btn w3-white w3-border" ng-mousemove="count2 = count2 + 1">Hover Me bro!</button>
+<!--
+<!xs button-->
+<button class="visible-sm-block commentBtn w3-btn w3-white w3-border" ng-click="ccc($index)">Click Me!</button>
+<button class="visible-sm-block commentBtn w3-btn w3-white w3-border" ng-mousemove="count2 = count2 + 1">Hover Me bro!</button> -->
 
 <!-- Clock -->
 <a ng-click="isReplyFormOpen = !isReplyFormOpen" class="w3-btn w3-white">Reply</a>
@@ -91,9 +91,9 @@ window.onclick = function(event) {
 </div>
 
 <!--normal size button-->
-            <button class="hidden-sm commentBtn w3-btn w3-white w3-border" ng-click="ccc($index)">Click Me!</button>
-            <button class="hidden-sm  commentBtn w3-btn w3-white w3-border" ng-mousemove="count2 = count2 + 1">Hover Me bro!</button>
-            <button class="hidden-sm  commentBtn w3-btn w3-light-grey w3-border" ng-dblclick="cccc($index)">Duble Click Me!</button>
+            <button class="commentBtn w3-btn w3-white w3-border" ng-click="ccc($index)">Click Me!</button>
+            <button class="commentBtn w3-btn w3-white w3-border" ng-mousemove="count2 = count2 + 1">Hover Me bro!</button>
+            <button class="commentBtn w3-btn w3-light-grey w3-border" ng-dblclick="cccc($index)">Duble Click Me!</button>
                 <p> {{count}} + {{count2}} = {{count + count2}} </p> <br/>
 <p style="color:red">counter: <span>{{shtoyik}}</span> 3</p>
                 <a class="commentBtn w3-btn w3-white w3-border" target="_blank" href=yo.html>Testing some animations</a>
