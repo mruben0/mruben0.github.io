@@ -5,24 +5,24 @@
   <title>Natoura Skiing</title>
   <link rel="icon" href="img/ic.jpg" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <script type="text/javascript" src="js/angular.min.js"></script>
   <script type="text/javascript" src="js/bower_components/angular/angular.js"></script>
   <script type="text/javascript" src="js/bower_components/angular-animate/angular-animate.js"></script>
   <script type="text/javascript" src="js/bower_components/angular-resource/angular-resource.js"></script>
   <script type="text/javascript" src="js/bower_components/angular-route/angular-route.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body ng-controller="skiController">
 
 
-    <div class="container-fluid" style="background-color:#fff;height:500px;">
-      <div class="container slider">
+    <div class="container-nb slider" style="background-color:#fff;height:500px;">
+
       <img class="banner slide" ng-hide="!isCurrentSlideIndex($index)" ng-repeat="slide in slides" ng-src="{{slide.image}}">
 
-          <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
-          <a class="arrow next" href="#" ng-click="prevSlide()"></a>
+          <a class="arrow prev" href="#" ng-click="nextSlide()"><</a>
+          <a class="arrow next" href="#" ng-click="prevSlide()">></a>
 
           <div class="navs">
             <div class="wrapper">
@@ -33,7 +33,6 @@
                 </ul></div>
             </div>
 
-      </div>
     </div>
 
   <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500" style="background-color:#008060">

@@ -4,11 +4,9 @@
  //     background-color: #000000;
  // }
 
-.container {
+.container-nb {
   position: relative;
   border-left: 2px solid black;
-
-
 }
 .affix {
      top: 0;
@@ -18,24 +16,20 @@
  .affix.container-fluid {
      padding-top: 70px;
  }
- .banner {
-   height: 500px;
-   width: 100%;
- }
+
   .slider {
-     width: 800px;
-     height: 400px;
+     width: 100%;
+     height: 500px;
      overflow: hidden;
      position: relative;
-     background: #e6e6e6;
-     border: 20px solid #FFF;
-     margin-top: 20px;
+     padding: 0em;
  }
 
  .slide {
      position: absolute;
      top: 0;
      left: 0;
+     width: 100%;
  }
  .arrow {
      position: absolute;
@@ -50,27 +44,27 @@
      background: url(../assets/img/blank.gif) no-repeat;
  }
  .arrow.prev {
-     opacity: 0.2;
-     left: 20px;
-     background-image: url(../assets/img/paddle_prev_999.png);
+     opacity: 0.5;
+     left: 2rem;
      transition: 0.2s linear all;
+     text-decoration: none;
+     font-size: 3em;
  }
 
  .arrow.next {
-     opacity: 0.2;
-     right: 20px;
-     background-image: url(../assets/img/paddle_next_999.png);
+     opacity: 0.5;
+     right: 2rem;
      transition: 0.2s linear all;
+     text-decoration: none;
+     font-size: 3em;
  }
 
  .arrow.prev:hover {
      opacity: 1;
-     background-color: black;
  }
 
  .arrow.next:hover {
      opacity: 1;
-     background-color: black;
  }
   // /*---------------------------------------------------------
  // NAV
