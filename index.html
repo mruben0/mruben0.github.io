@@ -17,7 +17,7 @@
 <body ng-controller="skiController">
 
 
-    <div class="container-nb slider" style="background-color:#fff;height:500px;">
+    <div class="container-nb slider" style="background-color:#fff;height:55rem;">
 
       <img class="banner slide" ng-hide="!isCurrentSlideIndex($index)" ng-repeat="slide in slides" ng-src="{{slide.image}}">
 
@@ -32,21 +32,25 @@
                        ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
                 </ul></div>
             </div>
+      </div>
 
-    </div>
 
-  <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500" style="background-color:#008060">
+
+  <nav class="navbar" data-spy="affix" data-offset-top="500">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Basic Topnav</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
+      <li class="active"><a href="#">Գլխավոր</a></li>
+      <li><a href="#">Ուղիներ</a></li>
+      <li><a href="#">Մեր Մասին</a></li>
+      <li><a href="#">Լուսանկարներ</a></li>
+      <li><a href="#">Հետաքրքիր փաստեր</a></li>
+      <li><a href="#">Ճանապարհորդի Բլոգը</a></li>
+        <li><a href="#">Հետադարձ Կապ</a></li>
     </ul>
   </nav>
 
-  <div class="container-fluid" style="height:1000px">
+  <div class="container-fluid homeContainer" scroll style="height:100%;">
 
-    <h1>Some text to enable scrolling</h1>
+    <p ng-class="{min:ChangeClass}">Some text to enable scrolling</p>
     <h1>Some text to enable scrolling</h1>
     <h1>Some text to enable scrolling</h1>
     <h1>Some text to enable scrolling</h1>

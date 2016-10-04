@@ -112,4 +112,34 @@
   border-color: #FFF;
   background-color: transparent; }
 
+.navbar {
+  background-color: #fff; }
+  .navbar ul {
+    width: 100%;
+    text-align: center; }
+  .navbar li {
+    border-bottom: 1px solid black;
+    background-color: #e6ffff;
+    padding-right: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: inline; }
+    .navbar li:hover {
+      border-bottom: 3px solid black;
+      margin-bottom: 0rem; }
+
+.min {
+  animation-name: scrll;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: scrll;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards; }
+
+@keyframes scrll {
+  from {
+    font-size: 10px; }
+  to {
+    font-size: 100px; } }
+
 /*# sourceMappingURL=style.css.map */
