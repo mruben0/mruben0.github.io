@@ -145,14 +145,15 @@
     }
     li{
   border-bottom: 1px solid black;
-  background-color: #e6ffff;
   padding-right: 5rem;
   margin-bottom: 2rem;
   text-align: center;
   display: inline;
+  height: 5rem;
       &:hover {
       border-bottom: 3px solid black;
       margin-bottom: 0rem;
+      height: 5.4rem;
     }
   }
 }
