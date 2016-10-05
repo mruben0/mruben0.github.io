@@ -118,9 +118,6 @@
     width: 100%;
     text-align: center; }
   .navbar li {
-    border-bottom: 1px solid black;
-    padding-right: 5rem;
-    margin-bottom: 2rem;
     text-align: center;
     display: inline;
     height: 5rem; }
@@ -142,14 +139,33 @@
     font-size: 10px; }
   to {
     font-size: 100px; } }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .slider {
-    height: 15em !important; }
+    height: 15em !important;
+    width: 100% !important; }
 
   .container-nb {
     height: 15em !important; }
 
   .mobile-hide {
+    display: none; }
+
+  .navbar {
+    width: 100% !important;
+    background-color: #fff; }
+    .navbar li:nth-child(2) {
+      margin-top: 1em; }
+
+  .navElement {
+    height: 1em !important;
+    padding: 1em;
+    display: block !important;
+    float: none !important; }
+    .navElement a {
+      border: 1px solid #002525;
+      background-color: #fff; } }
+@media (min-width: 768px) {
+  .desktop-hide {
     display: none; } }
 
 /*# sourceMappingURL=style.css.map */
