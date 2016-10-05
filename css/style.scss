@@ -44,7 +44,7 @@
      background: url(../assets/img/blank.gif) no-repeat;
  }
  .arrow.prev {
-     opacity: 0.5;
+     opacity: 0.7;
      left: 2rem;
      transition: 0.2s linear all;
      text-decoration: none;
@@ -52,7 +52,7 @@
  }
 
  .arrow.next {
-     opacity: 0.5;
+     opacity: 0.7;
      right: 2rem;
      transition: 0.2s linear all;
      text-decoration: none;
@@ -168,4 +168,11 @@
 @keyframes scrll {
     from {font-size: 10px;}
     to {font-size:100px;}
+}
+
+@media (max-width: 480px) {
+
+.slider { height: 15em !important  }
+.container-nb { height:  15em !important   }
+.mobile-hide { display: none}
 }
