@@ -23,8 +23,9 @@ $scope.prevSlide = function () {
 $scope.nextSlide = function () {
         $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
     };
-
+$scope.activeMenu ='main'
 });
+
 ski.directive("scroll", function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind("scroll", function() {

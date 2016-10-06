@@ -157,8 +157,8 @@
       margin-top: 1em; }
 
   .navElement {
-    height: 1em !important;
-    padding: 1em;
+    height: 2em !important;
+    padding: 4em !important;
     display: block !important;
     float: none !important; }
     .navElement a {

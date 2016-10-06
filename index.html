@@ -4,7 +4,7 @@
   <meta  charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ASMA</title>
-  <link rel="icon" href="img/ic.jpg" type="image/x-icon" />
+  <link rel="icon" href="images/ASMAicon.png" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <script type="text/javascript" src="js/angular.min.js"></script>
@@ -39,26 +39,26 @@
 
   <nav class="navbar mobile-hide" data-spy="affix" data-offset-top="500">
     <ul class="nav nav-tabs" role="tablist">
-      <li class="active"><a href="#">Գլխավոր</a></li>
-      <li><a href="#">Ուղիներ</a></li>
-      <li><a href="#">Մեր Մասին</a></li>
-      <li><a href="#">Լուսանկարներ</a></li>
-      <li><a href="#">Հետաքրքիր փաստեր</a></li>
-      <li><a href="#">Ճանապարհորդի Բլոգը</a></li>
-        <li><a href="#">Հետադարձ Կապ</a></li>
+      <li ng-click="activeMenu='main'" ng-class="{active:activeMenu==='main'}"><a href="#">Գլխավոր</a></li>
+      <li ng-click="activeMenu='uxi'" ng-class="{active:activeMenu==='uxi'}"><a href="#">Ուղիներ</a></li>
+      <li ng-click="activeMenu='about'" ng-class="{active:activeMenu==='about'}"><a href="#">Մեր Մասին</a></li>
+      <li ng-click="activeMenu='pics'" ng-class="{active:activeMenu==='pics'}"><a href="#">Լուսանկարներ</a></li>
+      <li ng-click="activeMenu='facts'" ng-class="{active:activeMenu==='facts'}"><a href="#">Հետաքրքիր փաստեր</a></li>
+      <li ng-click="activeMenu='blog'" ng-class="{active:activeMenu==='blog'}"><a href="#">Ճանապարհորդի Բլոգը</a></li>
+      <li ng-click="activeMenu='contactus'" ng-class="{active:activeMenu==='contactus'}"><a href="#">Հետադարձ Կապ</a></li>
     </ul>
   </nav>
 
     <!-- mobile -->
   <nav class="navbar desktop-hide" data-spy="affix" data-offset-top="150">
     <ul class="nav nav-pills" role="tablist">
-      <li class=" navElement active"><a href="#">Գլխավոր</a></li>
-      <li class="navElement"><a href="#">Ուղիներ</a></li>
-      <li class="navElement"><a href="#">Մեր Մասին</a></li>
-      <li class="navElement"><a href="#">Լուսանկարներ</a></li>
-      <li class="navElement"><a href="#">Հետաքրքիր փաստեր</a></li>
-      <li class="navElement"><a href="#">Ճանապարհորդի Բլոգը</a></li>
-        <li class="navElement"><a href="#">Հետադարձ Կապ</a></li>
+      <li class="navElement" ng-class="{active:activeMenu==='main'}"><a ng-click="activeMenu='main'" href="#">Գլխավոր</a></li>
+      <li class="navElement" ng-class="{active:activeMenu==='uxi'}"><a ng-click="activeMenu='uxi'" href="#">Ուղիներ</a></li>
+      <li class="navElement" ng-class="{active:activeMenu==='about'}"><a  ng-click="activeMenu='about'"href="#">Մեր Մասին</a></li>
+      <li class="navElement" ng-class="{active:activeMenu==='pics'}"><a ng-click="activeMenu='pics'"  href="#">Լուսանկարներ</a></li>
+      <li class="navElement" ng-class="{active:activeMenu==='facts'}"><a ng-click="activeMenu='facts'" href="#">Հետաքրքիր փաստեր</a></li>
+      <li class="navElement" ng-class="{active:activeMenu==='blog'}"><a ng-click="activeMenu='blog'"   href="#">Ճանապարհորդի Բլոգը</a></li>
+      <li class="navElement" ng-class="{active:activeMenu==='contactus'}"><a ng-click="activeMenu='contactus'" href="#">Հետադարձ Կապ</a></li>
     </ul>
 
   </nav>
