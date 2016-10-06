@@ -167,7 +167,8 @@
     to {font-size:100px;}
 }
 
-@media (max-width: 768px) {
+@media only screen
+and (max-width: 768px) {
 
 .slider { height: 15em !important ;
           width:100% !important;}
@@ -193,6 +194,7 @@
 }
 
 //desktop
-@media (min-width: 768px){
+@media only screen
+and (min-width: 768px){
   .desktop-hide {display: none;}
 }
