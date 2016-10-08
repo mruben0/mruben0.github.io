@@ -8,6 +8,23 @@
   position: relative;
   border-left: 2px solid black;
 }
+
+.nav {
+  li {
+    color:darkcyan !important;
+  }
+}
+
+  .panel-footer{
+
+p {float:right;}
+   a {text-decoration: none;
+   color: green;
+    &:visited {color: green;};
+    &:hover{font-weight: bold;}};
+      abbr {cursor: pointer !important;
+  }
+}
 .affix {
      top: 0;
      width: 100%;
@@ -49,7 +66,7 @@
      font-size: 3em;
      &:hover {
        opacity: 1 !important;
-       font-size: 4em !important;
+       font-weight: bold;
        font-color: darkcyan !important;
      }
  }
@@ -62,7 +79,7 @@
      font-size: 3em;
      &:hover {
        opacity: 1 !important;
-       font-size: 4em !important;
+       font-weight: bold;
        font-color: darkcyan !important;
      }
  }
@@ -156,6 +173,7 @@
   }
 }
   .min{
+    color:darkcyan;
     animation-name: scrll;
     animation-duration: 1s;
     animation-fill-mode: forwards;

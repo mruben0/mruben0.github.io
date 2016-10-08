@@ -2,6 +2,21 @@
   position: relative;
   border-left: 2px solid black; }
 
+.nav li {
+  color: darkcyan !important; }
+
+.panel-footer p {
+  float: right; }
+.panel-footer a {
+  text-decoration: none;
+  color: green; }
+  .panel-footer a:visited {
+    color: green; }
+  .panel-footer a:hover {
+    font-weight: bold; }
+.panel-footer abbr {
+  cursor: pointer !important; }
+
 .affix {
   top: 0;
   width: 100%; }
@@ -39,7 +54,7 @@
   font-size: 3em; }
   .arrow.prev:hover {
     opacity: 1 !important;
-    font-size: 4em !important;
+    font-weight: bold;
     font-color: darkcyan !important; }
 
 .arrow.next {
@@ -50,7 +65,7 @@
   font-size: 3em; }
   .arrow.next:hover {
     opacity: 1 !important;
-    font-size: 4em !important;
+    font-weight: bold;
     font-color: darkcyan !important; }
 
 .navs {
@@ -126,6 +141,7 @@
       height: 5.4rem; }
 
 .min {
+  color: darkcyan;
   animation-name: scrll;
   animation-duration: 1s;
   animation-fill-mode: forwards;
