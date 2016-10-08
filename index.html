@@ -20,7 +20,7 @@
 
     <div class="container-nb slider" style="background-color:#fff;height:55rem;">
 
-      <img class="banner slide" ng-hide="!isCurrentSlideIndex($index)" ng-repeat="slide in slides" ng-src="{{slide.image}}">
+      <img class="banner slide" ng-hide="!isCurrentSlideIndex($index)" ng-repeat="slide in slides" ng-src="{{slide.imageUrl}}">
 
           <a class="arrow prev" href="#" ng-click="nextSlide()"><</a>
           <a class="arrow next" href="#" ng-click="prevSlide()">></a>
@@ -65,10 +65,10 @@
 
   <div class="container-fluid homeContainer" scroll style="height:100%;">
 
+    <p class="mobile-hide" ng-class="{min:ChangeClass}">Some text to enable scrolling</p>
     <h1>Some text to enable scrolling</h1>
     <h1>Some text to enable scrolling</h1>
     <h1>Some text to enable scrolling</h1>
-    <p ng-class="{min:ChangeClass}">Some text to enable scrolling</p>
     <h1>Some text to enable scrolling</h1>
     <h1>Some text to enable scrolling</h1>
     <h1>Some text to enable scrolling</h1>

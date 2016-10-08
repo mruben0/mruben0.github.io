@@ -2,11 +2,17 @@ var ski = angular.module('ski', ['ngAnimate']);
 ski.controller('skiController', function($scope, $http){
   $scope.test = 4;
 
-  $scope.slides = [
-    {image: 'images/img00.jpg', description: 'Image 00'},
-    {image: 'images/img01.jpg', description: 'Image 01'},
-    {image: 'images/img02.jpg', description: 'Image 02'}
-];
+
+  $http.get('json/slider.json')
+      .then(function(yo){
+         $scope.slides = yo.data;
+       });
+
+//   $scope.slides = [
+//     {image: 'images/img00.jpg'},
+//     {image: 'images/img01.jpg'},
+//     {image: 'images/img02.jpg'}
+// ];
 
 $scope.currentIndex = 0;
     $scope.setCurrentSlideIndex = function (index) {

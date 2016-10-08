@@ -128,7 +128,7 @@
 
 .min {
   animation-name: scrll;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   -webkit-animation-name: scrll;
   -webkit-animation-duration: 0.5s;

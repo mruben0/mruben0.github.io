@@ -28,11 +28,8 @@
   display: block;
   top: 50%;
   margin-top: -35px;
-  width: 36px;
-  height: 71px;
   outline: none;
-  cursor: pointer;
-  background: url(../assets/img/blank.gif) no-repeat; }
+  cursor: pointer; }
 
 .arrow.prev {
   opacity: 0.7;
@@ -40,6 +37,10 @@
   transition: 0.2s linear all;
   text-decoration: none;
   font-size: 3em; }
+  .arrow.prev:hover {
+    opacity: 1 !important;
+    font-size: 4em !important;
+    font-color: darkcyan !important; }
 
 .arrow.next {
   opacity: 0.7;
@@ -47,12 +48,10 @@
   transition: 0.2s linear all;
   text-decoration: none;
   font-size: 3em; }
-
-.arrow.prev:hover {
-  opacity: 1; }
-
-.arrow.next:hover {
-  opacity: 1; }
+  .arrow.next:hover {
+    opacity: 1 !important;
+    font-size: 4em !important;
+    font-color: darkcyan !important; }
 
 .navs {
   text-align: center;
@@ -128,7 +127,7 @@
 
 .min {
   animation-name: scrll;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   -webkit-animation-name: scrll;
   -webkit-animation-duration: 0.5s;
@@ -139,7 +138,7 @@
     font-size: 10px; }
   to {
     font-size: 100px; } }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .slider {
     height: 15em !important;
     width: 100% !important; }
@@ -157,14 +156,14 @@
       margin-top: 1em; }
 
   .navElement {
-    height: 1em !important;
-    padding: 1em;
+    height: 2em !important;
+    padding: 4em !important;
     display: block !important;
     float: none !important; }
     .navElement a {
       border: 1px solid #002525;
       background-color: #fff; } }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .desktop-hide {
     display: none; } }
 
