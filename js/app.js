@@ -8,12 +8,6 @@ ski.controller('skiController', function($scope, $http){
          $scope.slides = yo.data;
        });
 
-//   $scope.slides = [
-//     {image: 'images/img00.jpg'},
-//     {image: 'images/img01.jpg'},
-//     {image: 'images/img02.jpg'}
-// ];
-
 $scope.currentIndex = 0;
     $scope.setCurrentSlideIndex = function (index) {
         $scope.currentIndex = index;
