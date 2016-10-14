@@ -32,6 +32,7 @@ p {float:right;}
 
  .affix.container-fluid {
      padding-top: 70px;
+
  }
 
   .slider {
@@ -42,13 +43,44 @@ p {float:right;}
      padding: 0em;
  }
 
+ //new design
+ .container-fluid {
+   margin-top: -20px;
+     background-color: #fff;
+     }
+
+  .nav{ background-color: #fff;}
+
+  .panel-footer{ background-color: #fff;
+  margin: -10px;
+  height: 4rem;}
+
+.aboutus {
+ z-index:-10;
+ position: fixed;
+ top:-150px;
+  img {
+    width: 100%;
+    height: auto;
+bottom: 10px}
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.afterabout {
+  margin-top: 200px;
+  background-color: white;
+}
+
+//newdesignend
  .slide {
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
  }
-
  .logo  {
      position: absolute;
      z-index: 1003;
@@ -62,7 +94,7 @@ p {float:right;}
  }
  .hideLogo {display: none;}
  .arrow {
-     position: absolute;
+    position: absolute;
      z-index: 1002;
      display: block;
      top: 50%;

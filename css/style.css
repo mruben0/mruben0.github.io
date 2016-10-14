@@ -31,6 +31,35 @@
   position: relative;
   padding: 0em; }
 
+.container-fluid {
+  margin-top: -20px;
+  background-color: #fff; }
+
+.nav {
+  background-color: #fff; }
+
+.panel-footer {
+  background-color: #fff;
+  margin: -10px;
+  height: 4rem; }
+
+.aboutus {
+  z-index: -10;
+  position: fixed;
+  top: -150px; }
+  .aboutus img {
+    width: 100%;
+    height: auto;
+    bottom: 10px; }
+
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
+
+.afterabout {
+  margin-top: 200px;
+  background-color: white; }
+
 .slide {
   position: absolute;
   top: 0;
