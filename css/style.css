@@ -1,0 +1,55 @@
+.upPart {
+  width: auto;
+  height: 30rem;
+  background-color: darkcyan; }
+
+.middlePart {
+  width: auto;
+  height: 20rem;
+  background-color: red; }
+
+.downPart {
+  width: auto;
+  height: 35rem;
+  background-color: #267373; }
+
+.left {
+  margin-left: 0px;
+  border: 1px solid black; }
+
+.right {
+  margin-right: 0px;
+  border: 1px solid green;
+  background-color: darkcyan;
+  opacity: 0.9; }
+
+.circledImg {
+  border-radius: 200px;
+  width: 30%;
+  margin-top: 8rem;
+  margin-left: 34%;
+  cursor: pointer; }
+  .circledImg:hover {
+    width: 35%;
+    margin-top: 4rem;
+    margin-left: 30%; }
+
+.name {
+  width: 30%;
+  margin-top: 1rem;
+  margin-left: 33%;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+  .name:hover {
+    background-color: rgba(38, 217, 160, 0.32); }
+
+@media only screen and (max-width: 768px) {
+  .mobile-hide {
+    display: none; } }
+@media only screen and (min-width: 768px) {
+  .desktop-hide {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
