@@ -1,52 +1,68 @@
 .upPart {
   width: auto;
-  height: 30rem;
-  background-color: darkcyan; }
+  height: 30rem; }
 
 .middlePart {
   width: auto;
   height: 20rem;
   background-color: red; }
 
-.downPart {
-  width: auto;
-  height: 35rem;
-  background-color: #267373; }
+.col.left {
+  margin-left: 0px; }
 
-.left {
-  margin-left: 0px;
-  border: 1px solid black; }
-
-.right {
+.col.right {
   margin-right: 0px;
-  border: 1px solid green;
-  background-color: darkcyan;
-  opacity: 0.9; }
+  opacity: 0.9;
+  width: 50%;
+  overflow: auto; }
 
 .circledImg {
   border-radius: 200px;
-  width: 30%;
-  margin-top: 8rem;
-  margin-left: 34%;
+  border: 2px solid #00695c;
+  width: 35%;
+  margin-top: 4rem;
+  margin-left: 32%;
   cursor: pointer; }
   .circledImg:hover {
-    width: 35%;
-    margin-top: 4rem;
-    margin-left: 30%; }
+    position: relative;
+    top: .2rem; }
 
 .name {
-  width: 30%;
+  background-color: #00695c;
+  width: 40%;
   margin-top: 1rem;
-  margin-left: 33%;
+  margin-left: 30%;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 3px; }
   .name:hover {
-    background-color: rgba(38, 217, 160, 0.32); }
+    position: relative;
+    top: .2rem; }
 
 @media only screen and (max-width: 768px) {
   .mobile-hide {
+    display: none; }
+
+  .circledImg {
+    margin-top: 4rem;
+    width: 50%;
+    margin-right: 25%;
+    overflow: hidden; }
+    .circledImg:hover {
+      margin-top: 4rem;
+      width: 50%;
+      margin-right: 25%;
+      overflow: hidden; }
+
+  .row.upPart {
+    overflow: hidden; }
+
+  .col.right {
+    width: 100%;
+    overflow: auto; }
+
+  .col.left {
     display: none; } }
 @media only screen and (min-width: 768px) {
   .desktop-hide {
